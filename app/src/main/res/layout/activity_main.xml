@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:background="@android:color/holo_orange_light"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Information"
+        android:textAlignment="center"
+        android:textSize="35dp"
+
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+
+        android:background="@color/white">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:layout_weight="1"
+                android:textSize="25dp"
+
+                />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="textPersonName"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Place: "
+                android:layout_weight="1"
+                android:textSize="25dp"
+
+                />
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:inputType="text"
+                android:layout_height="60dp"
+                />
+        </TableRow>
+        <TableRow
+           >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type: "
+                android:textSize="25dp"
+
+                />
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/indoor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="indoor"
+
+                    />
+                <RadioButton
+                    android:id="@+id/outdoor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="outdoor"
+                    />
+                <RadioButton
+                    android:id="@+id/online"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Online"
+                    />
+            </RadioGroup>
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date &amp; time: "
+                android:layout_weight="1"
+                android:textSize="22dp"
+
+                />
+            <EditText
+                android:id="@+id/dateAndTime"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="datetime"
+                />
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Capacity:"
+                android:layout_weight="1"
+                android:textSize="24dp"
+
+                />
+            <EditText
+                android:id="@+id/capacity"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="numberDecimal"
+                />
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Budget:"
+                android:layout_weight="1"
+                android:textSize="24dp"
+
+                />
+            <EditText
+                android:id="@+id/budget"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="numberDecimal"
+                />
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:layout_weight="1"
+                android:textSize="24dp"
+
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="textEmailAddress"
+                />
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:layout_weight="1"
+                android:textSize="24dp"
+
+                />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="phone"
+                />
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Description:"
+                android:layout_weight="1"
+                android:textSize="18dp"
+
+                />
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:inputType="text"
+                android:lines="4"
+                />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Error message:"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/cancelBtn"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+        <Button
+            android:id="@+id/shareBtn"
+            android:text="Share"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+        <Button
+            android:id="@+id/saveBtn"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

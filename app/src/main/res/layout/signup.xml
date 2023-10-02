@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="35dp"
+
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_margin="8dp">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_height="49dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Name: "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+
+                />
+
+            <EditText
+                android:id="@+id/singupName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Email: "
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/signupEmail"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Phone: "
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/signupPhone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:inputType="phone"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_height="40dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="User ID: "
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/signupUserID"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_height="40dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Password: "
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/signupPassword"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Re-enter Password: "
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/signupRePassword"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row7"
+            android:layout_height="40dp"
+            >
+            <CheckBox
+                android:id="@+id/checkBoxUserID"
+                android:text="Remember User ID"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="40dp"
+            >
+
+            <CheckBox
+                android:id="@+id/checkBoxPassword"
+                android:text="Remember Password"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/row8"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Already have account?"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="@android:color/black"
+                android:layout_weight="1"
+                android:textColor="@color/purple_200"
+                android:textSize="15dp"></Button>
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:id="@+id/row9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"></Button>
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_weight="1"></Button>
+    </LinearLayout>
+</LinearLayout>
